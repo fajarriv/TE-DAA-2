@@ -1,3 +1,6 @@
+# This code adopted from
+# https://www.geeksforgeeks.org/hamiltonian-cycle/
+# contributed by Divyanshu Mehta 
 class HamiltonianBt():
     def __init__(self, vertices):
         self.graph = [[0 for column in range(vertices)]
@@ -52,19 +55,19 @@ class HamiltonianBt():
         print("\n")
 
 
-g1 = HamiltonianBt(5)
-g1.graph = [[0, 1, 0, 1, 0], 
-            [1, 0, 1, 1, 1],
-            [0, 1, 0, 0, 1,], 
-            [1, 1, 0, 0, 1],
-            [0, 1, 1, 1, 0], ]
+# g1 = HamiltonianBt(5)
+# g1.graph = [[0, 1, 0, 1, 0], 
+#             [1, 0, 1, 1, 1],
+#             [0, 1, 0, 0, 1,], 
+#             [1, 1, 0, 0, 1],
+#             [0, 1, 1, 1, 0], ]
 
-# Print the solution
-g1.hamPath()
+# # Print the solution
+# g1.hamPath()
 
-g2 = HamiltonianBt(5) 
-g2.graph = [ [0, 1, 0, 1, 0], [1, 0, 1, 1, 1], 
-        [0, 1, 0, 0, 1,], [1, 1, 0, 0, 0], 
-        [0, 1, 1, 0, 0], ] 
+# g2 = HamiltonianBt(5) 
+# g2.graph = [ [0, 1, 0, 1, 0], [1, 0, 1, 1, 1], 
+#         [0, 1, 0, 0, 1,], [1, 1, 0, 0, 0], 
+#         [0, 1, 1, 0, 0], ] 
 
-g2.hamPath(); 
+# g2.hamPath(); 
